@@ -1,0 +1,137 @@
+html {
+    box-sizing: border-box;
+    font-size: 10px;
+    text-align: center;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+input {
+    border-style: none;
+    background: transparent;
+    outline: none;
+}
+body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    background-image: radial-gradient(circle at 0% 0%, #373b52, #252736 51%, #1d1e26);
+}
+
+#main-title {
+    font-size: 60px;
+    color: #bfd2ff;
+    margin-bottom: 5px;
+}
+#sub-title {
+    font-size: 20px;
+    color: #838eb4;
+    margin-bottom: 7rem;
+}
+
+.demo-flex-spacer-top {
+    flex-grow: 0.2;
+}
+.demo-flex-spacer-bottom {
+    flex-grow: 1;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100%;
+    max-width: 2000px;
+    padding: 0 30px;
+    margin: 0 auto;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0 0;
+   }
+    100% {
+        background-position: 100% 0;
+   }
+}
+
+.webflow-style-input {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+    border-radius: 5px;
+    padding: 1.4rem 2rem 1.6rem;
+    background: rgba(57, 63, 84, 0.8);
+
+    margin-right: 10px;
+}
+.webflow-style-input:after {
+    content: "";
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    z-index: 999;
+    height: 3px;
+    border-bottom-left-radius: 2px;
+    border-bottom-right-radius: 2px;
+    background-position: 0% 0%;
+    background: linear-gradient(to right, #b294ff, #57e6e6, #feffb8, #57e6e6, #b294ff, #57e6e6);
+    background-size: 500% auto;
+    animation: gradient 3s linear infinite;
+}
+.webflow-style-input input {
+    flex-grow: 2;
+    color: #bfd2ff;
+    font-size: 1.8rem;
+    line-height: 2.4rem;
+    vertical-align: middle;
+}
+.webflow-style-input input::-webkit-input-placeholder {
+    color: #7881a1;
+}
+.webflow-style-input {
+    color: #7881a1;
+    font-size: 2.4rem;
+    line-height: 2.4rem;
+    vertical-align: middle;
+    transition: color 0.25s;
+}
+.webflow-style-input {
+    color: #bfd2ff;
+}
+
+.submit_button {
+    border: solid #7881a1;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 2px;
+    margin-top: 5px;
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    width: 15px !important;
+    height: 15px !important;
+}
+.submit_button:hover {
+    border: solid #bfd2ff;
+    border-width: 0 3px 3px 0;
+}
+
+#contents {
+    padding-top: 20px;
+    font-size: 2.4rem;
+    color: #bfd2ff;
+    text-align: left;
+}
+
+.footer {
+    border-top: 1px solid #7881a159;
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size: 15px;
+    color: #7881a159;
+}
+
+
