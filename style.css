@@ -117,6 +117,7 @@ body {
 .submit_button:hover {
     border: solid #bfd2ff;
     border-width: 0 3px 3px 0;
+    cursor: pointer;
 }
 
 #contents {
