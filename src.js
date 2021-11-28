@@ -1,4 +1,3 @@
-
 var input_text = document.getElementById("input_text")
 var submit_button = document.getElementsByClassName("submit_button");
 
