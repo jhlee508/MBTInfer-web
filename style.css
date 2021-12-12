@@ -26,7 +26,7 @@ body {
 #sub-title {
     font-size: 20px;
     color: #838eb4;
-    margin-bottom: 7rem;
+    margin-bottom: 8rem;
 }
 
 .demo-flex-spacer-top {
@@ -119,19 +119,120 @@ body {
 }
 
 #contents {
-    padding: 20px 0 20px 0;
+    padding: 30px 0 30px 0;
     margin: 10px 0 10px 0;
-    font-size: 2.4rem;
     color: #bfd2ff;
     text-align: left;
 }
+
+.card:hover, .card:hover .card--hover a {
+    box-shadow: 0 10px 30px 0 rgba(0, 0, 0, 0.25);
+}
+.card {
+    -webkit-box-flex: 300px;
+    -ms-flex: 300px;
+    flex: 300px;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 2px solid #7881a159;
+    cursor: pointer;
+    position: relative;
+    transition: 0.5s ease;
+}
+.card:hover {
+    border-color: #7fefbd;
+}
+.card:hover .card--hover {
+    opacity: 1;
+}
+.card:hover .card--hover a {
+    -webkit-transform: translate(-50%, 50%);
+    -ms-transform: translate(-50%, 50%);
+    transform: translate(-50%, 50%);
+    opacity: 1;
+}
+.card--hover {
+    padding: 20px 0;
+    text-align: center;
+    opacity: 0.6;
+    transition: 0.25s ease;
+}
+.card--hover h3 {
+    font-size: 2.4rem;
+    margin: 0;
+}
+.card--hover p {
+    margin: 10px 0 0;
+    font-size: 1.8rem;
+}
+.card--hover a {
+    -webkit-transform: translate(-50%, 125%);
+    -ms-transform: translate(-50%, 125%);
+    transform: translate(-50%, 125%);
+    border-radius: 20px;
+    background-color: #7fefbd;
+    color: #000;
+    font-weight: bold;
+    padding: 8px 16px;
+    font-size: 1.5rem;
+    display: inline-block;
+    text-decoration: none;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    opacity: 0;
+    transition: 0.25s ease;
+}
+
+.loading-div {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 15vh;
+}
+.loading {
+    position: relative;
+    color: #7fefbd;
+    font-size: 4em;
+    letter-spacing: 5px;
+    border-bottom: 16px solid #333;
+    line-height: 1.5;
+    font-family: consolas;
+    text-transform: uppercase;
+}
+.loading::before {
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    color: #7fefbd;
+    border-bottom: 16px solid #7fefbd;
+    animation: lod 2s linear infinite;
+    overflow: hidden;
+}
+@keyframes lod {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 100%;
+    }
+}  
 
 .footer {
     border-top: 1px solid #7881a159;
     margin: 0px 20px 0px 20px;
     padding: 10px 10px 10px 10px;
+    width: 100%;
     font-size: 15px;
     color: #7881a159;
 }
+
 
 
