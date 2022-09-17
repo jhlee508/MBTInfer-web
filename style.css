@@ -132,7 +132,10 @@ body {
     -webkit-box-flex: 300px;
     -ms-flex: 300px;
     flex: 300px;
-    padding: 10px;
+    padding-top: 10px;
+    padding-bottom: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
     margin-bottom: 20px;
     border-radius: 5px;
     border: 2px solid #7881a159;
@@ -153,18 +156,28 @@ body {
     opacity: 1;
 }
 .card--hover {
-    padding: 20px 0;
+    padding: 10px 0;
     text-align: center;
     opacity: 0.6;
     transition: 0.25s ease;
 }
-.card--hover h3 {
-    font-size: 2.4rem;
+.card--hover h1 {
+    font-size: 3.5rem;
     margin: 0;
+}
+.card--hover h3 {
+    font-size: 2.0rem;
+    margin: 5px;
 }
 .card--hover p {
     margin: 10px 0 0;
+    font-size: 1.5rem;
+}
+.card--hover h5 {
+    margin-top: 0px;
+    margin-bottom: 10px;
     font-size: 1.8rem;
+    text-align: left;
 }
 .card--hover a {
     -webkit-transform: translate(-50%, 125%);
